@@ -3,5 +3,5 @@ package com.example.BeanRegistration;
 public interface Teacher {
     public void teach(Learner learner, double numberOfHours);
 
-    public void lecture(Learner[] learners, double numberOfHours);
+    public void lecture(Iterable<? extends Learner> learners, double numberOfHours);
 }
