@@ -9,6 +9,14 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
         this.personList = personList;
     }
 
+    public ArrayList<PersonType> getPersonList() {
+        return personList;
+    }
+
+    public void setPersonList(ArrayList<PersonType> personList) {
+        this.personList = personList;
+    }
+
     public void add(PersonType personType) {
         personList.add(personType);
     }
@@ -43,4 +51,5 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
     public ArrayList<PersonType> findAll() {
         return personList;
     }
+
 }
